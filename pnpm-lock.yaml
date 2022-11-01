@@ -29,6 +29,7 @@ specifiers:
   fast-memoize: ^2.5.2
   fun-animal-names: ^0.1.1
   localforage: ^1.10.0
+  mauss: ^0.3.3
   mprocs: ^0.6.3
   mui-markdown: ^0.5.5
   postcss: ^8.4.16
@@ -96,6 +97,7 @@ devDependencies:
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.26.0
   eslint-plugin-react: 7.31.10_eslint@8.26.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.26.0
+  mauss: 0.3.3
   mprocs: 0.6.3
   postcss: 8.4.18
   prettier: 2.7.1
@@ -9929,6 +9931,10 @@ packages:
   /markdown-table/3.0.2:
     resolution: {integrity: sha512-y8j3a5/DkJCmS5x4dMCQL+OR0+2EAq3DOtio1COSHsmW2BGXnNCK3v12hJt1LrUz5iZH5g0LmuYOjDdI+czghA==}
     dev: false
+
+  /mauss/0.3.3:
+    resolution: {integrity: sha512-NSTslY2so2r6+cEwQi5Yc6i+L2aEEesd1WPOfYommjmg8UAXS87MVWnLXuR0XR0gWS3ukit+JMCKuT1Xkg7EvQ==}
+    dev: true
 
   /mdast-util-definitions/5.1.1:
     resolution: {integrity: sha512-rQ+Gv7mHttxHOBx2dkF4HWTg+EE+UR78ptQWDylzPKaQuVGdG4HIoY3SrS/pCp80nZ04greFvXbVFHT+uf0JVQ==}

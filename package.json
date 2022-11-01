@@ -1,9 +1,30 @@
 {
-  "name": "chitchatter",
-  "version": "0.0.0",
+  "private": true,
   "homepage": "https://chitchatter.im/",
-  "author": "Jeremy Kahn <jeremyckahn@gmail.com>",
   "license": "GPL-2.0-or-later",
+  "scripts": {
+    "start": "react-scripts start",
+    "start:tracker": "bittorrent-tracker",
+    "dev": "mprocs \"npx cross-env REACT_APP_TRACKER_URL=\"ws://localhost:8000\" npm run start\" \"npm run start:tracker\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "prettier": "prettier 'src/**/*.js' --write",
+    "lint": "eslint src --max-warnings=0"
+  },
+  "packageManager": "pnpm@7.14.0",
+  "prettier": "mauss/prettier.json",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -36,38 +57,6 @@
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "start:tracker": "bittorrent-tracker",
-    "dev": "mprocs \"npx cross-env REACT_APP_TRACKER_URL=\"ws://localhost:8000\" npm run start\" \"npm run start:tracker\"",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "prettier": "prettier 'src/**/*.js' --write",
-    "lint": "eslint src --max-warnings=0"
-  },
-  "packageManager": "pnpm@7.14.0",
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "engines": {
-    "node": "16.x",
-    "npm": "8.x"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
     "@types/react-syntax-highlighter": "^15.5.5",
     "@types/uuid": "^8.3.4",
@@ -82,15 +71,11 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "mauss": "^0.3.3",
     "mprocs": "^0.6.3",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
     "tailwindcss": "^3.1.8"
-  },
-  "jest": {
-    "transformIgnorePatterns": [
-      "node_modules/(?!trystero)/"
-    ]
   }
 }

@@ -7,24 +7,11 @@
     "start:tracker": "bittorrent-tracker",
     "dev": "mprocs \"npx cross-env REACT_APP_TRACKER_URL=\"ws://localhost:8000\" npm run start\" \"npm run start:tracker\"",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "prettier": "prettier 'src/**/*.js' --write",
-    "lint": "eslint src --max-warnings=0"
+    "check:style": "prettier --write .",
+    "test": "react-scripts test"
   },
   "packageManager": "pnpm@7.14.0",
   "prettier": "mauss/prettier.json",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
